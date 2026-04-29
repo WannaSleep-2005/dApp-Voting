@@ -51,9 +51,11 @@ contract Voting {
 
     constructor() {
         owner = msg.sender;
-        _addCandidate("Nguyen Van An");
-        _addCandidate("Tran Thi Bich");
-        _addCandidate("Le Van Cuong");
+        _addCandidate("Dinh Manh Duc");
+        _addCandidate("Nguyen Gia Tuong");
+        _addCandidate("Nguyen Ngoc Thuy");
+        _addCandidate("Truong Hoang Khang");
+        _addCandidate("Tran Bui Hoang Kim");
     }
 
     function _addCandidate(string memory _name) internal {
