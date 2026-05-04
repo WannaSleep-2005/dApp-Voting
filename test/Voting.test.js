@@ -16,9 +16,7 @@ describe("Kiểm thử Smart Contract - dApp Voting", function () {
     voting = await Voting.deploy();
   });
 
-  // =====================================================================
-  // PHẦN 1: KIỂM THỬ CÁC YÊU CẦU CƠ BẢN (Theo mục 3.4 của Đề bài)
-  // =====================================================================
+  // A. KIỂM THỬ CÁC YÊU CẦU CƠ BẢN (Theo mục 3.4 của đề bài)
 
   it("1. Kiểm tra contract khởi tạo đúng số lượng ứng cử viên", async function () {
     // Contract của nhóm đang có 5 ứng cử viên trong constructor
@@ -69,9 +67,7 @@ describe("Kiểm thử Smart Contract - dApp Voting", function () {
       .withArgs(1n);
   });
 
-  // =====================================================================
-  // PHẦN 2: KIỂM THỬ CÁC YÊU CẦU MỞ RỘNG (Theo mục 2.2 của Đề bài)
-  // =====================================================================
+  // KIỂM THỬ CÁC YÊU CẦU MỞ RỘNG (Theo mục 2.2 của đề bài)
 
   it("7. Yêu cầu mở rộng (Admin/Owner): Chỉ owner mới có quyền thêm ứng cử viên", async function () {
     // Owner thực hiện thêm ứng viên -> Thành công
